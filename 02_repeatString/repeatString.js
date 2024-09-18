@@ -6,6 +6,5 @@ const repeatString = function repeatyboy(word, number) {
         return word.repeat(number)
     }
 }
-
 // Do not edit below this line
 module.exports = repeatString;
