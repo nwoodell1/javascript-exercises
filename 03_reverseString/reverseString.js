@@ -1,8 +1,8 @@
-const reverseString = function reversethatbitch("string") {
+const reverseString = function reversethatbitch(string) {
     //split the string into constituent letters 
     //store those letters in an array
     //reproduce the letters in the array backwards
-
+    console.log(string)
     //we're going to create a for loop that returns the last letter in each iteration of the array
 
     // 1)create the array with let myArray = string.split("");
