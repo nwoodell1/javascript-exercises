@@ -1,14 +1,21 @@
-const reverseString = function reversethatbitch(string) {
-    //split the string into constituent letters 
-    //store those letters in an array
-    //reproduce the letters in the array backwards
-    console.log(string)
-    //we're going to create a for loop that returns the last letter in each iteration of the array
+function reverseString1(string) {
+    let myArray = []
 
-    // 1)create the array with let myArray = string.split("");
-    // 2)access the last letter in the array with myArray.length -1
-    // 3) make sure that we are removing the last letter of the array each time through the loop
-};
+    for (i = 0; i < string.length; i++) {
+        myArray.push(string.charAt(i))
+    }
+
+    let outputstring = ""
+    for (i = 1; i <= string.length; i++) {
+        outputstring += myArray[string.length - i]
+    }
+    console.log(outputstring)
+    return outputstring
+}
+
+reverseString1("i'm slim shady!")
+
+const reverseString = reverseString1
 
 // Do not edit below this line
 module.exports = reverseString;
